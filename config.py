@@ -31,20 +31,20 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '2007758161 5212270860')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", 8913869))
+    API_HASH = os.environ.get("API_HASH", "d1f8ff92ab5caa7cb0523e3a7b0ce641")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5042921956:AAEWSB_M7aOC_LPPArfcvc3sTWb_Teka64A")     
+    SESSION = os.environ.get("SESSION_STRING", "AQCX9aDcfNsDqT0Tp2uKgErCDC0kssl3pkmjv14lEncaBSS0IjhnKnOKA3xAsDUPNSF6FgdIH1YqNEYn36qM0vNkiocBbkYMaGMOWcJ4im37oLgbh7W1JvwXIzp4Kn17v1oXQWZdRQVJRS3YxC3PX3Pfjdek3YTsSbwW1vli0LQAM0ek3hkRm0Nv5v_Xh0mrC9Ng3Syn3FI2pXUFa47_IzBhXZHJACHjtrER19As6b583s8Kwd6IYKzk41FbQ4tzD4FtLB7y3-2NfP3ym2xdomGIKEJsDQCwI_HVeHuUg-mnuFHJ967wFM2VzwZAOrD90dKcsjFSf0VDtYKUM5zbf1n8cA97hwA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
+    CHAT = int(os.environ.get("CHAT", "-1001443691625"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://youtu.be/VOLKJJvfAbg")
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", None)
@@ -188,7 +188,7 @@ class Config:
        elif CUSTOM_QUALITY.lower() == 'low':
           CUSTOM_QUALITY=50
        else:
-          LOGGER.warning("Invalid QUALITY specified.Defaulting to High.")
+          LOGGER.warning("Invalid QUALITY specified. Defaulting to High.")
           CUSTOM_QUALITY=100
 
 
@@ -231,9 +231,9 @@ For private channels , make sure both the bot and USER account is a member of ch
     SETTINGS_HELP="""
 **You can easily customize you player as per you needs. The following configurations are available:**
 
-🔹Command: **/settings**
+Command: **/settings**
 
-🔹AVAILABLE CONFIGURATIONS:
+**AVAILABLE CONFIGURATIONS:**
 
 **Player Mode** -  __This allows you to run your player as 24/7 music player or only when there is song in queue. 
 If disabled, player will leave from the call when the playlist is empty.
@@ -279,7 +279,8 @@ An attempt to overcome this limit has been made by automatically restarting the 
 
 Command: **/record**
 
-AVAILABLE CONFIGURATIONS:
+**AVAILABLE CONFIGURATIONS:**
+
 1. Record Video: __If enabled both the video and audio of the stream will be recorded, otherwise only audio will be recorded.__
 
 2. Video dimension: __Choose between portrait and landscape dimensions for your recording__
@@ -358,7 +359,7 @@ __If your player went something gone wrong, you can easily check the logs using 
  
 Command : **/env**
 __Setup your config vars with /env command.__
-__Example: To set up a__ `REPLY_MESSAGE` __use__ `/env REPLY_MESSAGE=Hey, Check out @subin_works rather than spamming in my PM`__
+__Example: To set up a__ `REPLY_MESSAGE` __use__ `/env REPLY_MESSAGE=Hey, I'm a bot to play music in VC, not having time to chat with you.`__
 __You can delete a config var by ommiting a value for that, Example:__ `/env LOG_GROUP=` __this will delete the existing LOG_GROUP config.
 
 Command: **/config**

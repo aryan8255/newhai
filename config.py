@@ -37,14 +37,14 @@ class Config:
     API_ID = int(os.environ.get("API_ID", 8913869))
     API_HASH = os.environ.get("API_HASH", "d1f8ff92ab5caa7cb0523e3a7b0ce641")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5042921956:AAEWSB_M7aOC_LPPArfcvc3sTWb_Teka64A")     
-    SESSION = os.environ.get("SESSION_STRING", "AQC75miMf8Tb7WjC8LN0_yqPsVxvrODxOO3rvsL3ENPxJTqm1XxmtQxXl-IfdMXGhNXhBb6D2zXqLuLTZdjk4qNStHCuW7x74Kh0ZQRitTZr8iWjAnScbrq7OCmq0yBTvUdBGB7LrUkPqata4yz60XtjsMuPmJpjCuOnLAK2Enr-d5kDeKdlK8n8RXskUphfbE4Wf17xiTta3RACFiv9ZKsicLBwNLr7Pmtxm2aUjKFlztwiHzXjgCM_rHtys7S1iVpvR3b0d7QjG5vVErDqow5zKFL2uvzZinBd--wt3H5HOW4UsyaaoR0CWPdu65drdVGyLRGCfZu6qN68RixEJ25TAAAAAU99aKwA")
+    SESSION = os.environ.get("SESSION_STRING", "AQCfgI5loYLGU3Bna03ThcWzaGrI7ClhCO9yuC8p1voJ0NmdcV0tOpJkpYtvEJwr3HkbMnE8nbCwAVuDJJkpezEjvFCBs4nCX8ZAK8A0O6GEZv49zjTCaoUoXK5zzrK6WGGZ5aX9ra_UZ5KWfvaiX6ogAODWvb4SwUuNfhirBrfmeVzmLUmLLqZ_bUe9hFbIdjBZioG-a7V1XSNgXRgpQl1OGjp283EYRxPuysiUxCS8BRQqBcuiVssDt5nvpyHdd46s46i_ikgAIzMQxPkdTqS63NeDbH9xGZJLNEPtxZFq4dkWxCT0558W_zI-72pRjZJ_sSupsCjNpdIQor9uKz9FAAAAAU99aKwA")
 
     #Stream Chat and Log Group
     CHAT = int(os.environ.get("CHAT", "-1001443691625"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://youtu.be/VOLKJJvfAbg")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://youtu.be/_B6T8O15Ohk")
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", None)
